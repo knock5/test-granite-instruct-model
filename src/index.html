@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Viewer with Tabs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>IBM Granite Prompt Viewer</h1>
+      <textarea id="prompt" placeholder="Masukkan prompt di sini..."></textarea>
+      <button id="submit">Kirim Prompt</button>
+
+      <div class="tabs">
+        <button class="tab-button active" data-tab="raw">Raw JSON</button>
+        <button class="tab-button" data-tab="formatted">Formatted Text</button>
+        <button class="tab-button" data-tab="rendered">Rendered HTML</button>
+      </div>
+
+      <div class="tab-content active" id="tab-raw">
+        <pre id="response-raw"><code>JSON akan muncul di sini...</code></pre>
+      </div>
+      <div class="tab-content" id="tab-formatted">
+        <pre id="response-formatted">Teks akan muncul di sini...</pre>
+      </div>
+      <div class="tab-content" id="tab-rendered">
+        <div id="response-rendered">HTML akan muncul di sini...</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
