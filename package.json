@@ -1,0 +1,14 @@
+{
+  "name": "test-granite-models",
+  "version": "1.0.0",
+  "description": "Code generation optimization using IBM Granite instruct model",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node ./app.js"
+  },
+  "author": "MIF <putihbiru0505@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "replicate": "^1.0.1"
+  }
+}
